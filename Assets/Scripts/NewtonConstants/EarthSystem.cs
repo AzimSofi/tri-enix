@@ -23,8 +23,8 @@ public class BattleSystem : MonoBehaviour
     private void Start()
     {
         // 仮データで初期化
-        player = new Character { Name = "勇者", HP = 20, MaxHP = 20, Attack = 5 };
-        enemy = new Character { Name = "スライム", HP = 15, MaxHP = 15, Attack = 3 };
+        player = new Character { Name = "あなた", HP = 20, MaxHP = 20, Attack = 3 };
+        enemy = new Character { Name = "雑魚", HP = 10, MaxHP = 10, Attack = 6};
         // バトル開始
         StartCoroutine(BattleLoop());
     }
@@ -41,7 +41,7 @@ public class BattleSystem : MonoBehaviour
             // 勝敗判定
             if (enemy.HP <= 0)
             {
-                Debug.Log($"{enemy.Name}を倒した！ プレイヤーの勝利！");
+                Debug.Log($"{enemy.Name}を排除した！ けど調子に乗るなよ！");
                 battleOngoing = false;
                 break;
             }
@@ -53,7 +53,7 @@ public class BattleSystem : MonoBehaviour
             // 勝敗判定
             if (player.HP <= 0)
             {
-                Debug.Log($"{player.Name}は倒れた…… 敗北。");
+                Debug.Log($"{player.Name}の方が雑魚か…… 残念。");
                 battleOngoing = false;
                 break;
             }
