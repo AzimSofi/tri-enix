@@ -12,7 +12,7 @@ public class Character
     // 必要なら防御力など追加
 }
 
-public class BattleSystem : MonoBehaviour
+public class EarthSystem : MonoBehaviour
 {
     // バトルの状態を管理
     private BattleState state = BattleState.Start;
