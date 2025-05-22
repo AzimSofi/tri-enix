@@ -7,7 +7,7 @@ public class MainMenuManager : MonoBehaviour
     public void StartGame()
     {
         // Debug.Log("ゲーム開始ボタンが押されました！");
-        SceneManager.LoadScene("BloodyScene");
+        SceneManager.LoadScene("仮");
     }
 
     public void QuitGame()
