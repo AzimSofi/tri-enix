@@ -6,10 +6,8 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        Debug.Log("ゲーム開始ボタンが押されました！");
-
-        // 将来的にここにゲームシーンをロードするコードを書きます
-        // 例: SceneManager.LoadScene("OverworldScene");
+        // Debug.Log("ゲーム開始ボタンが押されました！");
+        SceneManager.LoadScene("BloodyScene");
     }
 
     public void QuitGame()
